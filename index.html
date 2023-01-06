@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon-32x32.png" type="image/png">
+  <title>Base Apparel</title>
+</head>
+<body>
+  <div class="container">
+    <section class="elements">
+      <div class="elements_container">
+        <img class="logo" src="images/logo.svg" alt="">
+        <div class="poster_container">
+          <picture>
+            <source class="desktop_poster" media="(min-width: 768px)" srcset="images/hero-desktop.jpg">
+            <img class="mobile_poster" src="images/hero-mobile.jpg" alt="">
+          </picture>
+        </div>
+        <div class="text_box">
+          <h1><span>WE'RE </span>COMING SOON</h1>
+          <P class="main_text">Hello fellow shoppers! We're currently building our new fashion store. 
+            Add your email below to stay up-to-date with announcements and our launch deals.
+          </P>
+        </div>
+        <form action="">
+          <div class="input_email">
+            <input type="email" name="mail" id="mail" placeholder="Email Address" required oninvalid="this.setCustomValidity(' ')"
+            oninput="setCustomValidity('')">
+            <div class="btn_error">
+              <img class="icon_error" src="images/icon-error.svg" alt="">
+              <button type="submit" class="btn_smt" onclick="erro()"><img src="images/icon-arrow.svg" alt=""></button>
+            </div>
+          </div>
+          <p class="error_message"> Please, provide a valid e-mail!</p>
+        </form>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
